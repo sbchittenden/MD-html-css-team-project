@@ -410,6 +410,7 @@ body {
   background-color: #F7F7F7;
   height: 40.5em;
   width: 2.5em;
+  float: left;
 }
 
 .code-gutter ul {
@@ -420,4 +421,17 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.code-area {
+  float: left;
+  width: 500px;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+  font-family: 'Input', monospace;
+  font-size: 0.875em;
+  line-height: 1.5em;
 }
