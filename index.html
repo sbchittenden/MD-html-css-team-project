@@ -1,13 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Collaboration.ModernDeveloper</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-	
-</body>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat + Code panels</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="content-wrapper">
+  <div class="left-side-wrapper">
+
+    <div class="tab-nav-wrapper">
+      <div class="tab active">
+        Chat <span class="close-icon"></span>
+      </div>
+      <div class="tab inactive">
+        Screen Sharing <span class="close-icon"></span>
+      </div>
+      <button class="add-panel">&plus; add panel</button>
+    </div>
+
+    <div class="conversation-wrapper">
+  <!-- message-* wraps the avatar div and message bubble -->
+      <div class="message-left">
+        <div class="avatar">
+          <span class="status status-green"></span>
+          <img src="http://placehold.it/48" alt="" />
+        </div>
+        <div class="left-bubble-wrapper user-blue">
+            <div class="left-bubble user-blue">
+              <span class="time-stamp">16 min ago</span>
+              <h1>Alexander Smith</h1>
+              <p>I noticed it yesterday only, and before reading your article. I wonder if they aren't only now starting to roll it out completely (and maybe coded the feature back in November).</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="message-left">
+        <div class="avatar">
+          <span class="status status-blue"></span>
+          <img src="http://placehold.it/48" alt="" />
+        </div>
+        <div class="left-bubble-wrapper user-pink">
+          <div class="left-bubble user-pink">
+            <span class="time-stamp">12 min ago</span>
+            <h1>Anna Pearson</h1>
+            <p>This is important stuff. Does it have a Wikipedia entry yet?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-right">
+        <div class="avatar">
+          <span class="status status-yellow"></span>
+          <img src="http://placehold.it/48" alt="" />
+        </div>
+        <div class="right-bubble-wrapper">
+          <div class="right-bubble">
+            <span class="time-stamp">11 min ago</span>
+            <h1>James Morrison</h1>
+            <p>It's there from a long time...... 2+ years back, I came to know about this via littlebigdetails.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-left">
+        <div class="avatar">
+          <span class="status status-green"></span>
+          <img src="http://placehold.it/48" alt="" />
+        </div>
+        <div class="left-bubble-wrapper user-blue">
+            <div class="left-bubble user-blue">
+              <span class="time-stamp">5 min ago</span>
+              <h1>Alexander Smith</h1>
+              <p>Video testimonials can be recorded from anywhere with the Modulates video recorder and then uploaded from anywhere.</p>
+            </div>
+          </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="message-input-wrapper">
+
+      <div class="message-left input-left">
+        <div class="avatar">
+          <span class="status status-yellow"></span>
+          <img src="http://placehold.it/48" alt="" />
+        </div>
+        <div class="chat-input-wrapper">
+          <textarea id="chat-input" wrap="hard" placeholder="Say something..."></textarea>
+        </div>
+            
+
+      </div>
+      <div class="send-button-wrapper">
+      <button class="button message-send">Send</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="right-side-wrapper">
+  
+  <div class="tab-nav-wrapper">
+    <div class="tab active">
+      Code Editor <span class="close-icon"></span>
+    </div>
+
+    <button class="add-panel">&plus; add panel</button>
+  </div>
+  
+  <div class="code-area-wrapper">
+
+    <div class="code-gutter">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+      </ul>
+    </div>  
+    
+    
+    
+  </div>
+  
+</div>
+</div>
+    
+    
+    
+    
+    
+  </body>
 </html>
