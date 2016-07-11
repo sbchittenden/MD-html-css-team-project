@@ -168,12 +168,12 @@ body {
 
 .left-bubble-wrapper {
   float: left;
-  width: 71%;
+  width: 68%;
 }
 
 .right-bubble-wrapper {
   float: right;
-  width: 71%
+  width: 68%
 }
 
 .message-left:after, .message-right:after {
@@ -302,7 +302,7 @@ body {
 .chat-input-wrapper {
   margin: 0;
   padding: 0;
-  width: 87%;
+  width: 83%;
   float: left;
   position: relative;
 }
