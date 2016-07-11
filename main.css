@@ -88,8 +88,8 @@ body {
 }
 
 .code-area-wrapper {
-  height: 40.688em;
-  overflow: auto;
+  height: 40.188em;
+  overflow: hidden;
   background-color: #FFFFFF;
   padding-left: 0.2em;
   margin: 0;
@@ -394,6 +394,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
   background-color: #D7DDE4;
 }
 
@@ -407,8 +408,9 @@ body {
 
 .code-gutter {
   background-color: #F7F7F7;
-  height: 40.5em;
-  width: 2.5em;
+  height: 40em;
+  min-width: 7%;
+  max-width: 10%;
   float: left;
 }
 
@@ -424,7 +426,8 @@ body {
 
 .code-area {
   float: left;
-  width: 500px;
+  width: 90%;
+  padding-left: 2%;
 }
 
 pre {
@@ -433,9 +436,17 @@ pre {
   font-family: 'Input', monospace;
   font-size: 0.875em;
   line-height: 1.5em;
+  white-space: pre-wrap;
 }
 
 /* media queries */
+
+@media screen and (max-width: 1125px) {
+   .chat-input-wrapper {
+    width: 75%;
+  } 
+}
+
 
 @media screen and (max-width: 961px) {
   .tab {
@@ -453,4 +464,16 @@ pre {
   .inactive {
     border-top: solid 4px #D7DDE4;
   }
+
+  .code-area-wrapper {
+    overflow: auto;
+  }
+
+  .chat-input-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  
 }
