@@ -1,1 +1,301 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'Roboto';
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  overflow: auto;
+  height: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.left-header {
+  float: left;
+  font-family: 'Roboto Slab', serif;
+  display: block;
+  font-size: 16px;
+  color: #8D8D8D;
+}
+
+img {
+ display: inline-block;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+.brand-name,
+.room-name {
+  display: inline-block;
+  line-height: 60px;
+}
+
+.brand-name {
+  color: #6C84DC;
+  font-weight: 600;
+}
+
+.right-header {
+  float: right;
+}
+
+.settings {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.room-container {
+  margin-top: 60px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: inline-block;
+  line-height: 24px;
+  margin-right: 10px;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.fa-pencil {
+  color: #D9D9D9;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: 1px;
+}
+
+.edit-pencil {
+  height: 14px;
+  width: 14px;
+  color: #D9D9D9;
+  position: relative;
+  top: 2px;
+}
+
+.fa-cog {
+  color: #8D8D8D;
+}
+
+.fa-users {
+  background-color: #6C84DC;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+}
+
+.room-instruction {
+  box-sizing: border-box;
+  border-bottom: 1px solid #DEDEDE;
+  color: #8D8D8D;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+
+.roles,
+.color {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 47.5%;
+  vertical-align: top;
+}
+
+.roles {
+  margin-right: 4.5%;
+}
+
+h1,
+h2,
+h1 ~ p,
+.section-description,
+.detail-box,
+.color-box {
+  padding-left: 20px;
+}
+
+h2 {
+ display: inline-block;
+ float: left;
+ text-transform: uppercase;
+ margin: 0;
+}
+
+h2 ~ span {
+  float: right;
+}
+
+.section-header {
+  line-height: 20px;
+  height: 20px;
+}
+
+.section-header-left {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section-header-right {
+  float: right;
+  margin-right: 10px;
+  line-height: 20px;
+}
+
+.plus-icon {
+  color: #6C84DC;
+  margin-right: 2px;
+}
+
+.section-button {
+  display: inline;
+  vertical-align: top;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6C84DC;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+}
+
+.section-description {
+  border-bottom: 1px solid #DEDEDE;
+  color: #8D8D8D;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-bottom: 20px;
+}
+
+.detail-box {
+   height: 50px;
+   margin-bottom: 3px;
+}
+
+ .detail-box:nth-child(1) {
+   height: 50px;
+   margin-top: 20px;
+}
+
+.detail-box:nth-child(even) {
+  background-color: #F2F2F6;
+}
+
+.detail-box > span {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.member-name {
+  font-size: 16px;
+}
+
+.member-role {
+  font-style: italic;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.role-edit {
+  margin-right: 0;
+  padding-right: 0;
+  vertical-align: middle;
+} 
+
+.color-box {
+  clear: both;
+  height: 70px;
+}
+
+.color-section {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 14px 0 0 0 ;
+  padding-bottom: 4px;
+}
+
+.color-description {
+  color: #8D8D8D;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.color-right {
+  background-color: #F3F3F6;
+  height: 70px;
+  line-height: 70px;
+  padding: 10px;
+  vertical-align: middle
+}
+
+.color-left {
+  height: 70px;
+}
+
+.color-circle {
+  background-color: #DD77CB;
+  border-radius: 100%;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.color-detail {
+  font-size: 16px;
+  margin-right: 3px;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+.pink-detail {
+  color: #DD77CB;
+}
+
+.pink-circle {
+  background-color: #DD77CB;
+}
+
+.blue-detail {
+  color: #6C84DC;
+}
+
+.blue-circle {
+  background-color: #6C84DC;
+}
+
+.gray-detail {
+  color: #8D8D8D;
+}
+
+.gray-circle {
+  background-color: #8D8D8D;
+}
 
