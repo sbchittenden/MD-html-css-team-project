@@ -40,6 +40,10 @@ img {
   line-height: 60px;
 }
 
+.room-name {
+  color: #6F6F6F;
+}
+
 .brand-name {
   color: #6C84DC;
   font-weight: 600;
@@ -216,6 +220,7 @@ button {
 }
 
 .member-role {
+  color: #8D8D8D;
   font-style: italic;
   font-size: 14px;
   margin-right: 4px;
@@ -227,6 +232,10 @@ button {
   vertical-align: middle;
 } 
 
+.separator {
+  color: #8D8D8D;
+}
+
 .color-box {
   clear: both;
   height: 70px;
@@ -235,7 +244,7 @@ button {
 .color-section {
   font-size: 16px;
   font-weight: 400;
-  margin: 14px 0 0 0 ;
+  margin: 16px 0 0 0 ;
   padding-bottom: 4px;
 }
 
@@ -251,7 +260,7 @@ button {
   background-color: #F3F3F6;
   height: 70px;
   line-height: 70px;
-  padding: 10px;
+  padding: 6px;
   vertical-align: middle
 }
 
