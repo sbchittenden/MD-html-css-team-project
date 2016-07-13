@@ -327,7 +327,7 @@ button {
   text-align: right;
   color: #BFBFBF;
   margin-bottom: 3em;
-  padding-right: 0.25em;
+  padding-right: 1em;
 }
 
 .left-side-wrapper {
@@ -400,9 +400,13 @@ button {
   color: #6C84DC;
   float: right;
   margin-top: 1em;
-  margin-right: 0.25em;
+  margin-right: 1em;
   border: none;
   background: none;
+}
+
+.add-panel:focus {
+  outline: none;
 }
 
 .code-area-wrapper {
