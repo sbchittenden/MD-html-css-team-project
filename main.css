@@ -313,8 +313,21 @@ button {
 }
 
 .content-wrapper {
-  margin: 1.5em auto;
+  margin: 0.5em auto 3em auto;
   width: 90%;
+}
+
+.content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.close-settings {
+  text-align: right;
+  color: #BFBFBF;
+  margin-bottom: 3em;
+  padding-right: 0.25em;
 }
 
 .left-side-wrapper {
@@ -733,14 +746,14 @@ button {
   float: left;
   width: 90%;
   padding-left: 2%;
-  margin-top: -1.5em;
+  margin-top: -1.3em;
 }
 
 pre {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
-  line-height: 1.5em;
+  line-height: 1.3em;
   white-space: pre-wrap;
 }
 
