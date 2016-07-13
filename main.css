@@ -129,7 +129,7 @@ h1 {
 }
 
 .roles {
-  margin-right: 4.5%;
+  padding-right: 4.5%;
 }
 
 h1,
@@ -137,7 +137,7 @@ h2,
 h1 ~ p,
 .section-description,
 .detail-box,
-.color-box {
+.color-box {  
   padding-left: 20px;
 }
 
@@ -268,6 +268,7 @@ button {
 
 .color-left {
   height: 4.375em;
+  width: 60%;
 }
 
 .color-circle {
