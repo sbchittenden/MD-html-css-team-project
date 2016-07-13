@@ -733,6 +733,7 @@ button {
   float: left;
   width: 90%;
   padding-left: 2%;
+  margin-top: -1.5em;
 }
 
 pre {
