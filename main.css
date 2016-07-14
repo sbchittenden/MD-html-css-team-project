@@ -340,11 +340,13 @@ button {
 .left-side-wrapper {
   width: 50%;
   float: left;
+  -webkit-filter: drop-shadow(-2px 0px 4px #E6EAED);
 }
 
 .right-side-wrapper {
   width: 50%;
   float: left;
+  -webkit-filter: drop-shadow(2px 0px 4px #E6EAED);
 }
 
 .tab {
