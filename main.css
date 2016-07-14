@@ -45,7 +45,8 @@ img {
 }
 
 .room-name {
-  color: #8D8D8D;
+  color: #3F3F3F;
+  font-size: 12px;
 }
 
 .brand-name {
@@ -55,10 +56,12 @@ img {
 
 .right-header {
   float: right;
+  height: 60px;
+  line-height: 60px;
 }
 
 .settings {
-  margin-left: 0.500em;
+  margin-left: 0.100em;
   vertical-align: middle;
 }
 
@@ -70,6 +73,7 @@ img {
 
 h1 {
   box-sizing: border-box;
+  color: #3F3F3F;
   display: inline-block;
   font-size: 1.5em;
   font-weight: 400;
@@ -142,6 +146,7 @@ h1 ~ p,
 }
 
 h2 {
+ color: #3F3F3F;
  display: inline-block;
  float: left;
  text-transform: uppercase;
@@ -223,6 +228,7 @@ button {
 }
 
 .member-name {
+  color: #3F3F3F;
   font-size: 1em;
 }
 
@@ -243,6 +249,7 @@ button {
 }
 
 .color-section {
+  color: #3F3F3F;
   font-size: 0.8em;
   font-weight: 400;
   margin: 1em 0 0 0;
