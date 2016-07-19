@@ -3,9 +3,6 @@
 *HTML description list element*
 
 The HTML `<dl>` element is used to define a *description list*. The `<dl>` element is used in conjunction with `<dt>` (definition term) and `<dd>` (definition description) tags. Definition lists provide a way to semantically mark up content such as terms and definitions, questions and answers, or any other name-value pairs.
->
-The dl element represents a description list, which consists of zero or more term-description (name-value) groupings; each grouping associates one or more terms/names (the contents of dt elements) with one or more descriptions/values (the contents of dd elements).
-
 
 ## Syntax
 
