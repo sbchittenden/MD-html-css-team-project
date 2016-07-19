@@ -4,6 +4,7 @@
 
 The HTML `<dl>` element is used to define a *description list*. The `<dl>` element is used in conjunction with `<dt>` (definition term) and `<dd>` (definition description) tags. Definition lists provide a way to semantically mark up content such as terms and definitions, questions and answers, or any other name-value pairs.
 
+
 ## Syntax
 
 The `<dl>` element must have an opening (`<dl>`) and a closing (`</dl>`) tag
@@ -100,6 +101,12 @@ The above code (with default styles) appears in the browser as:
 
 
 The "Name" term has two valid definitions which are appropriately listed directly after the `<dt>` element.
+
+## Browser support
+
+|  | Chrome  | Firefox  | Internet Explorer  | Opera  | Safari  |
+|---|---|---|---|---|---|
+| **Basic support**  | 1.0   | Yes  | Yes  | Yes  | Yes  |
 
 ## Special Notes
 
