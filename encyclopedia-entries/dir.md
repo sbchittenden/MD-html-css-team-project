@@ -130,7 +130,7 @@ HTML:
 ```
 
 RESULT:
-![Complex Example of Dir Attribute with Inline Element](img/complex-dir.png)
+![Complex Example of Dir Attribute with Inline Element](img/complex.png)
 *Complex Example of Dir Attribute with Inline Element*  
 
 
