@@ -2,11 +2,11 @@
 
 ### [\<dl\>](HTML-Description-List-Element.md)
 
-###[dir](dir.md) 
+###[dir](dir.md)
 
 ### [content](content-CSS-property.md)
 
-### [border-Left](border-left.md)
+### [border-left](border-left.md)
 
 We chose to postpone writing the following two articles until we have completed the Intro to Javascript course.
 
