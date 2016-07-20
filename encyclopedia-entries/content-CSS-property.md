@@ -66,8 +66,6 @@ div:after {
 
 ##### Using a url() in `content`
 
-Write a introduction to the example, sufficient to explain what the example is showing.
-
 ```html
 <h1 class="avatar">Wiggles McFurry </h1>
 ```
@@ -133,14 +131,11 @@ The `attr()` value will render the value of the HTML attribute contained inside 
 
 Here is an example which appends the url of an `<a>` tag to the element's text:
 
-
-HTML:   
-
 ```html
 <a href="http://placecage.com">Images of Nicolas Cage! </a>
 ```
 
-CSS:
+with this css:
 
 ```css
 a {
@@ -154,7 +149,7 @@ a:after {
 }
 ```
 
-Result:
+renders as:
 
 ![attr() value example](img/attr_example.png)
 
@@ -177,14 +172,12 @@ Result:
 
 The following is an example of how one may use `open-quote`, `close-quote`, `no-open-quote`, and `no-close-quote` values for the `content` property.  First let's mark-up a quote that is also quoting someone else:
 
-HTML:
-
 ```html	
 <p>
   <q class="level-1">He said, <q class="level-2">She yelled, <q class="level-3">I love you!</q> </q></q>
 </p>
 ```
-CSS
+Now we add the quotes to the `q` tag and display them with the `content` property of the `q:before` and `q:after` pseudo elements:
 
 ```css
 q {
@@ -199,9 +192,7 @@ q:after {
   content: close-quote;
 }
 ```
-The above code generates the quotation marks according to the `q` element's `quotes` property:
-
-Result:
+This is how it looks in the browser:
 
 ![nested quotes in text](img/quotes.png)
 
