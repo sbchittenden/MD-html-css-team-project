@@ -3,12 +3,6 @@
 
 The border-left property combines the values of `border-left-color`, `border-left-style`, and `border-left-width` properties into one succinct statement to describe and set the left border of an element.  The values of the border-left property can be written in any order and if one or two values are omitted it will set to the default values.  
 
-## Browser Support
-
-|               | Chrome | Firefox | Safari | Opera | IE  |
-|:--------------|:------:|:-------:|:------:|:-----:|:---:|
-| Basic Support |  1.0   |   1.0   |  3.5   |  1.0  | 4.0 |
-
 ## Syntax
 
 The border properites are typcially set in the following: border-width, border-style, and border-color. A example of CSS syntax is below:
@@ -273,6 +267,12 @@ CSS:
 RESULTS:
 ![Complex border-left examples](img/complex-border-left.png)  
 Example of complex border-left property  
+
+## Browser Support
+
+|               | Chrome | Firefox | Safari | Opera | IE  |
+|:--------------|:------:|:-------:|:------:|:-----:|:---:|
+| Basic Support |  1.0   |   1.0   |  3.5   |  1.0  | 4.0 |
 
 ## Special Notes
 

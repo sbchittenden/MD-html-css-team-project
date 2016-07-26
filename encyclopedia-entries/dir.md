@@ -6,16 +6,6 @@ The `dir` attribute sets the base direction (directional context) for the displa
 
 At a basic level the `dir` attribute can be used to set the text direction at the document level or for elements such as paragraphs, tables and forms.  At a more advanced level the `dir` attribute can be used to handle bidirectional text in which text with different writing directions is mixed within a block element.  This would occur when the markup needs to reflect both English and Hebrew or more specifically text written *left-to-right* and text written *right-to-left*.  
 
-## Browser Support
-Overall and breakdown of browser support  
-
-|                   | Chrome | Firefox | Safari | Opera | Edge | IE  |
-|:------------------|:------:|:-------:|:------:|:-----:|:----:|:---:|
-| Basic Support     |  YES   |   YES   |  YES   |  YES  | YES  | YES |
-| Title Support     |  YES   |   YES   |  YES   |  YES  | YES  | NO  |
-| Scrollbar Support |  YES   |   YES   |  YES   |  YES  |  NO  | NO  |
-| Alertbox Support  |  YES   |   YES   |  YES   |  YES  | YES  | NO  |
-
 #### Additional Information on browser support  
 Find more information regarding [browser support ](https://www.w3.org/International/tests/repo/results/native-user-interfaces) for the `dir` attribute  
 
@@ -133,6 +123,15 @@ RESULT:
 ![Complex Example of Dir Attribute with Inline Element](img/complex-dir.png)
 *Complex Example of Dir Attribute with Inline Element*  
 
+## Browser Support
+Overall and breakdown of browser support  
+
+|                   | Chrome | Firefox | Safari | Opera | Edge | IE  |
+|:------------------|:------:|:-------:|:------:|:-----:|:----:|:---:|
+| Basic Support     |  YES   |   YES   |  YES   |  YES  | YES  | YES |
+| Title Support     |  YES   |   YES   |  YES   |  YES  | YES  | NO  |
+| Scrollbar Support |  YES   |   YES   |  YES   |  YES  |  NO  | NO  |
+| Alertbox Support  |  YES   |   YES   |  YES   |  YES  | YES  | NO  |
 
 ## Special Notes
 

@@ -340,11 +340,13 @@ button {
 .left-side-wrapper {
   width: 50%;
   float: left;
+  -webkit-filter: drop-shadow(-2px 0px 4px #E6EAED);
 }
 
 .right-side-wrapper {
   width: 50%;
   float: left;
+  -webkit-filter: drop-shadow(2px 0px 4px #E6EAED);
 }
 
 .tab {
@@ -385,15 +387,6 @@ button {
   float: right;
   margin-top: -1.75%;
 }
-
-/*.close-icon:after {
-  content: "\00D7";
-  position: absolute;
-  right: 0.625em;
-  top: 0.563em;
-  font-size: 1.25em;
-  color: #C4C4C4;
-}*/
 
 .right-side-wrapper .add-panel {
   color: #DD77CB;
@@ -805,8 +798,4 @@ code {
   .chat-input-wrapper {
     width: 70%;
   }
-}
-
-@media screen and (max-width: 780px) {
-  
 }
