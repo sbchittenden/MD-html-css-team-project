@@ -9,52 +9,55 @@ var errorMessage = document.getElementById('error-message');
 
 
 function sendMessage() {
-    console.log('message submited!');
-    var messageBody = chatInput.value;
-    var timeStamp = new Date();
-    var userPhoto = chatUser.childNodes[1].src;
-    var userName = chatUser.id;
-    var messageObj;
+  console.log('message submited!');
+  var messageBody = chatInput.value;
+  var timeStamp = new Date();
+  var userPhoto = chatUser.childNodes[1].src;
+  var userName = chatUser.id;
+  var messageObj;
 
-    if(isEmpty(messageBody)) {
-      errorMessage.innerHTML = 'Please enter a valid message';
-      errorMessage.className = 'invalid';
-      return;
-    } else {
-      errorMessage.className = 'valid';
-      errorMessage.innerHTML = '';
-    }
+  if (isEmpty(messageBody)) {
+    errorMessage.innerHTML = 'Please enter a valid message';
+    errorMessage.className = 'invalid';
+    return;
+  } else {
+    errorMessage.className = 'valid';
+    errorMessage.innerHTML = '';
+  }
 
-    if(isOfLength(messageBody, 100)) {
-      errorMessage.innerHTML = 'Your message cannot be longer than 100 characters';
-      errorMessage.className = 'invalid';
-      return;
-    } else {
-      errorMessage.className = 'valid';
-      errorMessage.innerHTML = '';
-    }
+  if (isOfLength(messageBody, 100)) {
+    errorMessage.innerHTML = 'Your message cannot be longer than 100 characters';
+    errorMessage.className = 'invalid';
+    return;
+  } else {
+    errorMessage.className = 'valid';
+    errorMessage.innerHTML = '';
+  }
 
-    userPhoto = userPhoto.substr((userPhoto.lastIndexOf('/') + 1));
+  userPhoto = userPhoto.substr((userPhoto.lastIndexOf('/') + 1));
 
-    // create the messageObj
-    messageObj = {
-        id: collabAppData.chatPanel.messageList.length + 1,
-        userName: userName,
-        userPhoto: userPhoto,
-        timeStamp: timeStamp,
-        body: messageBody
-    };
+  // create the messageObj
+  messageObj = {
+    id: collabAppData.chatPanel.messageList.length + 1,
+    userName: userName,
+    userPhoto: userPhoto,
+    timeStamp: timeStamp,
+    body: messageBody
+  };
 
-    // add the new message object to the messageList array in appData object
-    collabAppData.chatPanel.messageList.push(messageObj);
+  // add the new message object to the messageList array in appData object
+  collabAppData.chatPanel.messageList.push(messageObj);
 
-    // log messageObj to the console
-    console.log(messageObj);
+  // log messageObj to the console
+  console.log(messageObj);
 
-   // append new message to the chat window
-    appendMessage(messageObj);
+  // append new message to the chat window
+  appendMessage(messageObj);
 
-    return messageObj;
+  // reset chat input
+  chatInput.value = "";
+
+  return messageObj;
 
 }
 
@@ -78,6 +81,7 @@ function isOfLength(input, n) {
 function appendMessage(m) {
   var conversation = document.querySelector('.conversation-wrapper');
   var messageWrap = document.querySelector('.message-right').cloneNode(true);
-  messageWrap.querySelector('.right-bubble').innerHTML = '<span class="time-stamp">'+ m.timeStamp.toTimeString().substr(0,5) +'</span><h1>James Morrison</h1><p>'+ m.body +'</p>';
+  messageWrap.querySelector('.right-bubble').innerHTML = '<span class="time-stamp">' + m.timeStamp.toTimeString().substr(0, 5) + '</span><h1>James Morrison</h1><p>' + m.body + '</p>';
   conversation.appendChild(messageWrap);
 }
+
