@@ -2,6 +2,7 @@ var chatInput = document.getElementById('chat-input');
 var submitBtn = document.querySelector('button.button.message-send');
 var chatUser = document.querySelector('div.message-left.input-left > .avatar');
 var coversationPanel = document.querySelector('.conversation-wrapper');
+var chatInputWrapper = document.querySelector('.chat-input-wrapper');
 
 // send message button listener
 submitBtn.addEventListener('click', sendMessage);
@@ -17,21 +18,29 @@ function sendMessage() {
   var messageObj;
 
   if (isEmpty(messageBody)) {
-    errorMessage.innerHTML = 'Please enter a valid message';
+    errorMessage.innerHTML = 'Please enter a valid message !';
     errorMessage.className = 'invalid';
+    chatInput.className = 'chat-input-invalid';
+    chatInputWrapper.className = 'chat-input-wrapper-invalid';
     return;
   } else {
     errorMessage.className = 'valid';
     errorMessage.innerHTML = '';
+    chatInput.className = 'chat-input';
+    chatInputWrapper.className = 'chat-input-wrapper';
   }
 
   if (isOfLength(messageBody, 100)) {
-    errorMessage.innerHTML = 'Your message cannot be longer than 100 characters';
+    errorMessage.innerHTML = 'Message must be less than 100 characters !';
     errorMessage.className = 'invalid';
+    chatInput.className = 'chat-input-invalid';
+    chatInputWrapper.className = 'chat-input-wrapper-invalid';
     return;
   } else {
     errorMessage.className = 'valid';
     errorMessage.innerHTML = '';
+    chatInput.className = 'chat-input';
+    chatInputWrapper.className = 'chat-input-wrapper';
   }
 
   userPhoto = userPhoto.substr((userPhoto.lastIndexOf('/') + 1));
@@ -84,4 +93,3 @@ function appendMessage(m) {
   messageWrap.querySelector('.right-bubble').innerHTML = '<span class="time-stamp">' + m.timeStamp.toTimeString().substr(0, 5) + '</span><h1>James Morrison</h1><p>' + m.body + '</p>';
   conversation.appendChild(messageWrap);
 }
-
