@@ -141,7 +141,7 @@ h2,
 h1 ~ p,
 .section-description,
 .detail-box,
-.color-box {  
+.color-box {
   padding-left: 20px;
 }
 
@@ -158,7 +158,7 @@ h2 ~ span {
 }
 
 .section-header {
-  line-height: 1.25em; 
+  line-height: 1.25em;
   height: 1.25em;
 }
 
@@ -477,7 +477,7 @@ button {
   right: 5px;
 }
 
-/* different status colors */ 
+/* different status colors */
 
 .status-green {
   background-color: #37DC52;
@@ -516,7 +516,7 @@ button {
   height: 1em;
   margin: 1.25em 0 0 -0.5em;
   transform: rotate(-45deg);
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .message-right .avatar:before {
@@ -626,7 +626,8 @@ button {
   margin: 0;
 }
 
-.chat-input-wrapper {
+.chat-input-wrapper,
+.chat-input-wrapper-invalid {
   margin: 0;
   padding: 0;
   width: 83%;
@@ -634,7 +635,8 @@ button {
   position: relative;
 }
 
-.chat-input-wrapper:before {
+.chat-input-wrapper:before,
+.chat-input-wrapper-invalid:before {
   content:"";
   position: absolute;
   width: 1em;
@@ -642,7 +644,7 @@ button {
   background-color: #f7f7f7;
   margin: 1.25em 0 0 -0.5em;
   transform: rotate(-45deg);
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .input-left {
@@ -651,7 +653,8 @@ button {
   float: left;
 }
 
-#chat-input {
+#chat-input,
+.chat-input-invalid {
   font-family: 'Roboto';
   font-weight: 400;
   color: #3F3F3F;
@@ -664,6 +667,11 @@ button {
   resize: none;
   position: relative;
   border-radius: 3px;
+}
+
+.chat-input-invalid,
+.chat-input-wrapper-invalid:before {
+  background-color: #fff0f5 !important;
 }
 
 #chat-input::-webkit-input-placeholder {
@@ -695,7 +703,7 @@ button {
   font-weight: 400;
   display: inline;
   position: absolute;
-  bottom: 1.4em;
+  bottom: 1.5em;
   right: 2%;
 }
 
@@ -710,6 +718,19 @@ button {
 
 .message-send:focus {
   outline: none;
+}
+
+.invalid {
+  clear: both;
+  color: #DD274A;
+  display: block;
+  font-size: .75em;
+  line-height: 0;
+  margin-left: 4.5em;
+  padding: 0 1em;
+  position: relative;
+  top: .5em;
+  width: 80%;
 }
 
 /* scrollbar styling */
@@ -768,9 +789,10 @@ code {
 /* media queries */
 
 @media screen and (max-width: 1125px) {
-   .chat-input-wrapper {
+   .chat-input-wrapper,
+   .chat-input-wrapper-invalid {
     width: 75%;
-  } 
+  }
 }
 
 
@@ -778,7 +800,7 @@ code {
   .tab {
   padding: 3% 6%;
   width: auto;
-  } 
+  }
 
   .close-icon {
     float: none;
@@ -795,7 +817,8 @@ code {
     overflow: auto;
   }
 
-  .chat-input-wrapper {
+  .chat-input-wrapper,
+  .chat-input-wrapper-invalid {
     width: 70%;
   }
 }
